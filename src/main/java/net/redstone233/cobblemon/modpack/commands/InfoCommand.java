@@ -42,6 +42,7 @@ public class InfoCommand {
                             BoolArgumentType.getBool(run, "value"), run.getSource().getPlayer())
                         )
                     )
+                )
                     .then(CommandManager.literal("trsm")
                         .then(CommandManager.argument("value", BoolArgumentType.bool())
                             .executes(run -> TrsmTeam(run.getSource(), 
@@ -53,7 +54,6 @@ public class InfoCommand {
                         .then(CommandManager.argument("value", BoolArgumentType.bool())
                             .executes(run -> JointTeam(run.getSource(),
                                 BoolArgumentType.getBool(run, "value"), run.getSource().getPlayer())
-                            )
                         )
                     )
                 )
