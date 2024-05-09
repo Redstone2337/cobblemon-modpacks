@@ -66,7 +66,7 @@ public class InfoCommand {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.text.success",texts[0],texts[1],texts[2]));
+                player.sendMessage(Text.translatable("commands.info.text.success",texts[0],texts[1],texts[2],Text.translatable("global.text.name")));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
