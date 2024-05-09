@@ -7,7 +7,7 @@
     "commands.long.fail": "执行命令“long”失败",
     "commands.info.success": "\u00a7a执行命令“info”成功",
     "commands.info.fail": "执行命令“info”失败",
-    "commands.info.text.success": "整合包信息如下：\n%s\n%s\n%s",
+    "commands.info.text.success": "整合包信息如下：\n%s\n%s\n%s\n%s",
     "commands.info.flydragon.success": "飞龙团队：\n%s",
     "commands.info.trsm.success": "TRS团队：\n%s\n%s\n%s",
     "commands.info.joint.success": "联合团队：\n%s\n%s\n%s\n%s",
@@ -16,5 +16,6 @@
     "commands.nbt.slot.error": "\u00a7c此物品没有任何二进制命名标签",
     "commands.nbt.slot.small": "\u00a7e物品栏位数值%d过小！",
     "commands.nbt.slot.biggest": "\u00a7e物品栏位数值%d过大！",
-    "enchantment.trsm.speed": "牛逼"
+    "enchantment.trsm.speed": "牛逼",
+    "global.text.name": "\u00a7aV${version}; Def: \u00a7aV1.0.0+build5"
 }
