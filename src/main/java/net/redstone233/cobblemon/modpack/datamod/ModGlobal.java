@@ -1,13 +1,13 @@
 package net.redstone233.cobblemon.modpack.datamod;
 
-import net.minecraft.text.Text;
+//import net.minecraft.text.Text;
 
 public class ModGlobal {
     /**
      * InnerModGlobal
      */
     public class TextModGlobal {
-        public static final String[] GLOBAL_TEXTS = {"\u00a7eBy Redstone233","\u00a7aFor Flydragons Studios",(Text) Text.translatable("global.text.name")};
+        public static final String[] GLOBAL_TEXTS = {"\u00a7eBy Redstone233","\u00a7aFor Flydragons Studios","\u00a7aV1.0.0+build5"};
         public static final String[] GLOBAL_BOOKS = {"\u00a7bCobblemonmodpack V1.0.3","\u00a7dMinecraft V1.20.1", "\u00a71Fabric V0.15.11"};
     }
 
