@@ -61,91 +61,91 @@ public class InfoCommand {
     }
 
     private static int InfoText(ServerCommandSource source,boolean value,PlayerEntity player) throws CommandSyntaxException {
-        for (String text : texts) {
+        //for (String text : texts) {
             if (player == null) {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.text.success",text));
+                player.sendMessage(Text.translatable("commands.info.text.success",texts[0],texts[1],texts[2]));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             }
-        }
+        //}
         source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
         return 1;
     }
 
     private static int BookText(ServerCommandSource source,boolean value,PlayerEntity player) throws CommandSyntaxException {
-        for (String book : books) {
+        //for (String book : books) {
             if (player == null) {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.book.success",book));
+                player.sendMessage(Text.translatable("commands.info.book.success",books[0],books[1],books[2]));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             }
-        }
+        //}
         source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
         return 1;
     }
 
     private static int TeamFlydragon(ServerCommandSource source,boolean value,PlayerEntity player) throws CommandSyntaxException {
-        for (String flydragon : flydragons) {
+        //for (String flydragon : flydragons) {
             if (player == null) {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.flydragon.success",flydragon));
+                player.sendMessage(Text.translatable("commands.info.flydragon.success",flydragons[0]));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             }
-        }
+        //}
         source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
         return 1;
     }
 
     private static int TrsmTeam(ServerCommandSource source,boolean value,PlayerEntity player) throws CommandSyntaxException {
-        for (String trsm : trsmteams) {
+        //for (String trsm : trsmteams) {
             if (player == null) {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.trsm.success",trsm));
+                player.sendMessage(Text.translatable("commands.info.trsm.success",trsmteams[0],trsmteams[1],trsmteams[2]));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             }
-        }
+        //}
         source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
         return 1;
     }
 
     private static int JointTeam(ServerCommandSource source,boolean value,PlayerEntity player) throws CommandSyntaxException {
-        for (String joint : jointteams) {
+        //for (String joint : jointteams) {
             if (player == null) {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.joint.success",joint));
+                player.sendMessage(Text.translatable("commands.info.joint.success",jointteams[0],jointteams[1],jointteams[2],jointteams[3]));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             }
-        }
+        //}
         source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
         return 1;
     }
