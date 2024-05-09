@@ -27,6 +27,7 @@ public class InfoCommand {
                     BoolArgumentType.getBool(run, "value"), run.getSource().getPlayer())
                 )
             )
+        )
             .then(CommandManager.literal("book")
                 .then(CommandManager.argument("value", BoolArgumentType.bool())
                     .executes(run -> BookText(run.getSource(), 
@@ -56,8 +57,7 @@ public class InfoCommand {
                         )
                     )
                 )
-            )
-        );
+            );
     }
 
     private static int InfoText(ServerCommandSource source,boolean value,PlayerEntity player) throws CommandSyntaxException {
