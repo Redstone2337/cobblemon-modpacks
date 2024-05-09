@@ -61,12 +61,12 @@ public class InfoCommand {
     }
 
     private static int InfoText(ServerCommandSource source,boolean value,PlayerEntity player) throws CommandSyntaxException {
-        for (int i = 0; i < texts.length; i++) {
+        for (String text : texts) {
             if (player == null) {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.text.success",texts[i]));
+                player.sendMessage(Text.translatable("commands.info.text.success",text));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
@@ -79,12 +79,12 @@ public class InfoCommand {
     }
 
     private static int BookText(ServerCommandSource source,boolean value,PlayerEntity player) throws CommandSyntaxException {
-        for (int i = 0; i < books.length; i++) {
+        for (String book : books) {
             if (player == null) {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.book.success",books[i]));
+                player.sendMessage(Text.translatable("commands.info.book.success",book));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
@@ -97,12 +97,12 @@ public class InfoCommand {
     }
 
     private static int TeamFlydragon(ServerCommandSource source,boolean value,PlayerEntity player) throws CommandSyntaxException {
-        for (int i = 0; i < flydragons.length; i++) {
+        for (String flydragon : flydragons) {
             if (player == null) {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.flydragon.success",flydragons[i]));
+                player.sendMessage(Text.translatable("commands.info.flydragon.success",flydragon));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
@@ -115,12 +115,12 @@ public class InfoCommand {
     }
 
     private static int TrsmTeam(ServerCommandSource source,boolean value,PlayerEntity player) throws CommandSyntaxException {
-        for (int i = 0; i < trsmteams.length; i++) {
+        for (String trsm : trsmteams) {
             if (player == null) {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.trsm.success",trsmteams[i]));
+                player.sendMessage(Text.translatable("commands.info.trsm.success",trsm));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
@@ -133,12 +133,12 @@ public class InfoCommand {
     }
 
     private static int JointTeam(ServerCommandSource source,boolean value,PlayerEntity player) throws CommandSyntaxException {
-        for (int i = 0; i < jointteams.length; i++) {
+        for (String joint : jointteams) {
             if (player == null) {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.joint.success",jointteams[i]));
+                player.sendMessage(Text.translatable("commands.info.joint.success",joint));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
