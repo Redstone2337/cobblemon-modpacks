@@ -66,7 +66,7 @@ public class InfoCommand {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.text.success",texts[0],texts[1],Text.translatable("global.text.name",texts[2])));
+                player.sendMessage(Text.translatable("commands.info.text.success","<rainb>"+texts[0],texts[1],texts[2]+"</rainb>"));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
@@ -84,7 +84,7 @@ public class InfoCommand {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.book.success",books[0],books[1],books[2]));
+                player.sendMessage(Text.translatable("commands.info.book.success","<rainb>"+books[0],books[1],books[2]+"</rainb>"));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
@@ -102,7 +102,7 @@ public class InfoCommand {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.flydragon.success",flydragons[0]));
+                player.sendMessage(Text.translatable("commands.info.flydragon.success","<rainb>"+flydragons[0]+"</rainb>"));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
@@ -120,7 +120,7 @@ public class InfoCommand {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.trsm.success",trsmteams[0],trsmteams[1],trsmteams[2]));
+                player.sendMessage(Text.translatable("commands.info.trsm.success","<rainb>"+trsmteams[0],trsmteams[1],trsmteams[2]+"</rainb>"));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
@@ -138,7 +138,7 @@ public class InfoCommand {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.joint.success",jointteams[0],jointteams[1],jointteams[2],jointteams[3]));
+                player.sendMessage(Text.translatable("commands.info.joint.success","<rainb>"+jointteams[0],jointteams[1],jointteams[2],jointteams[3]+"</rainb>"));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
