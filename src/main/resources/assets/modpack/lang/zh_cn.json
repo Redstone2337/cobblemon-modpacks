@@ -17,5 +17,5 @@
     "commands.nbt.slot.small": "\u00a7e物品栏位数值%d过小！",
     "commands.nbt.slot.biggest": "\u00a7e物品栏位数值%d过大！",
     "enchantment.trsm.speed": "牛逼",
-    "global.text.name": "\u00a7aV${version}; Def: \u00a7b%s"
+    "global.text.name": "\u00a7aV1.0.0-beta4+build7; Def: \u00a7b%s"
 }
