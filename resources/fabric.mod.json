@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "modpack",
+	"version": "${version}",
+	"name": "Modpack Test Mod",
+	"description": "This is a modpack's Mod for Flydragons Studios",
+	"authors": [
+		"Redstone233"
+	],
+	"contact": {
+		"homepage": "https://redstone2337200.github.io/",
+		"sources": "https://github.com/Redstone2337200/cobblemon-modpack"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/modpack/pull-shark-default.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.redstone233.cobblemon.modpack.ModpackTestMod"
+		],
+		"fabric-datagen": [
+			"net.redstone233.cobblemon.modpack.ModpackTestModDataGenerator"
+		]
+	},
+	"mixins": [
+		"modpack.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": ">=0.92.1"
+	},
+	"custom": {
+		"modmenu": {
+			"badges": ["client"]
+		}
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
