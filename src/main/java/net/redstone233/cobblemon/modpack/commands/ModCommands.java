@@ -11,6 +11,10 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
 
 public class ModCommands {
+
+    public static final SimpleCommandExceptionType COMMAND_HOME_POS_EXCEPTION_TYPE = new SimpleCommandExceptionType(Text.translatable("commands.home.pos.error"));
+    public static final SimpleCommandExceptionType COMMMAND_HOME_NAME_EXCEPTION_TYPE = new SimpleCommandExceptionType(Text.translatable("commands.home.name.error"));
+
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher) {
         LiteralArgumentBuilder<ServerCommandSource> builder =
             CommandManager.literal("modpack").executes(ModCommands::run)
