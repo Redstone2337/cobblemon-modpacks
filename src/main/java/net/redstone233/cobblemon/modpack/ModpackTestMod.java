@@ -3,7 +3,9 @@ package net.redstone233.cobblemon.modpack;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.redstone233.cobblemon.modpack.commands.ModCommands;
+import net.redstone233.cobblemon.modpack.effects.ModEffects;
 import net.redstone233.cobblemon.modpack.enchantments.ModEnchantments;
+import net.redstone233.cobblemon.modpack.potions.ModPotions;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,6 +23,8 @@ public class ModpackTestMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModEnchantments.registerModEnchantments();
+		ModEffects.registerModEffects();
+		ModPotions.registerModPotions();
 
 		CommandRegistrationCallback.EVENT.register((dispatcher,registryAccess,environment) -> ModCommands.register(dispatcher));
 
