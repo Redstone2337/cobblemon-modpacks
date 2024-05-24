@@ -24,7 +24,7 @@
     "commands.nbt.slot.error": "\u00a7c此物品没有任何二进制命名标签",
     "commands.nbt.slot.small": "\u00a7e物品栏位数值%d过小！",
     "commands.nbt.slot.biggest": "\u00a7e物品栏位数值%d过大！",
-    "enchantment.trsm.speed": "牛逼",
+    "enchantment.modpack.nb_enchantment": "牛逼",
     "c.t.m": "%d,%d,%d,%f,%f,%d",
     "effect.modpack.fire_on_body": "引火Ⅰ",
     "effect.modpack.good_fire_on_body": "引火Ⅱ",
