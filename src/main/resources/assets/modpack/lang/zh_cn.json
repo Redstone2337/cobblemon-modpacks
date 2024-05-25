@@ -63,6 +63,8 @@
     "item.minecraft.lingering_potion.effect.good_experience": "滞留型经验获取Ⅱ",
     "item.minecraft.lingering_potion.effect.great_experience": "滞留型经验获取Ⅲ",
     "item.minecraft.lingering_potion.effect.better_experience": "滞留型经验获取Ⅳ",
-    "item.minecraft.lingering_potion.effect.best_experience": "滞留型经验获取Ⅴ"
+    "item.minecraft.lingering_potion.effect.best_experience": "滞留型经验获取Ⅴ",
+
+    "itemGroup.mod_group.name": "专属模组|物品"
 
 }
