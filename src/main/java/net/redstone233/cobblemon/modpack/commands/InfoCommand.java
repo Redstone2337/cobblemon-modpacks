@@ -66,7 +66,7 @@ public class InfoCommand {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.text.success",texts[i]));
+                player.sendMessage(Text.translatable("commands.info.text.success",texts[i],texts[1],texts[2]));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
@@ -84,7 +84,7 @@ public class InfoCommand {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.book.success",books[i]));
+                player.sendMessage(Text.translatable("commands.info.book.success",books[i],books[1],books[2]));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
@@ -120,7 +120,7 @@ public class InfoCommand {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.trsm.success",trsmteams[i]));
+                player.sendMessage(Text.translatable("commands.info.trsm.success",trsmteams[i],trsmteams[1],trsmteams[2]));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
@@ -138,7 +138,7 @@ public class InfoCommand {
                 source.sendError(Text.translatable("commands.info.fail"));
                 return 0;
             } else if (value == true) {
-                player.sendMessage(Text.translatable("commands.info.joint.success",jointteams[i]));
+                player.sendMessage(Text.translatable("commands.info.joint.success",jointteams[i],jointteams[1],jointteams[2],jointteams[3]));
                 source.sendFeedback(() -> Text.translatable("commands.info.success"), false);
                 return 1;
             } else if (value == false) {
