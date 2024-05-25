@@ -7,7 +7,7 @@ public class ModGlobal {
      * InnerModGlobal
      */
     public class TextModGlobal {
-        public static final String[] GLOBAL_TEXTS = {"\u00a7eBy Redstone233","\u00a7aFor Flydragons Studios","\u00a7aV1.0.0-beta10"};
+        public static final String[] GLOBAL_TEXTS = {"\u00a7eBy Redstone233","\u00a7aFor Flydragons Studios","\u00a7aV1.0.0-beta11"};
         public static final String[] GLOBAL_BOOKS = {"\u00a7bCobblemonmodpack V1.0.5","\u00a7dMinecraft V1.20.1", "\u00a71Fabric V0.15.11"};
     }
 
