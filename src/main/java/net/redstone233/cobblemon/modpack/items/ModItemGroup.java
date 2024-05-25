@@ -1,7 +1,6 @@
 package net.redstone233.cobblemon.modpack.items;
 
 import net.redstone233.cobblemon.modpack.ModpackTestMod;
-import net.redstone233.cobblemon.modpack.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -15,7 +14,7 @@ public class ModItemGroup {
     @SuppressWarnings("unused")
     private static final ItemGroup ITEM_GROUP = 
         Registry.register(Registries.ITEM_GROUP, 
-        new Identifier(ModpackTestMod.MOD_ID, "trsm_group"), 
+        new Identifier(ModpackTestMod.MOD_ID, "mod_group"), 
             FabricItemGroup.builder()
                 .icon(() -> new ItemStack(ModItems.EXCLAMATION))
                 .displayName(Text.translatable("itemGroup.mod_group.name"))
