@@ -6,6 +6,8 @@ import net.redstone233.cobblemon.modpack.commands.ModCommands;
 import net.redstone233.cobblemon.modpack.effects.ModEffects;
 import net.redstone233.cobblemon.modpack.enchantments.ModEnchantments;
 import net.redstone233.cobblemon.modpack.potions.ModPotions;
+import net.redstone233.cobblemon.modpack.items.ModItems;
+import net.redstone233.cobblemon.modpack.items.ModItemGroup;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +27,8 @@ public class ModpackTestMod implements ModInitializer {
 		ModEnchantments.registerModEnchantments();
 		ModEffects.registerModEffects();
 		ModPotions.registerModPotions();
+		ModItems.registerModItems();
+		ModItemGroup.registerModItemGroup();
 
 		CommandRegistrationCallback.EVENT.register((dispatcher,registryAccess,environment) -> ModCommands.register(dispatcher));
 
