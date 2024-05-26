@@ -21,7 +21,7 @@ public class BestExpEffect extends StatusEffect {
         if (entity instanceof PlayerEntity player) {
             player.addExperienceLevels(2 >> amplifier);
         }
-        super.applyUpdateEffect(entity, amplifier);
+        //super.applyUpdateEffect(entity, amplifier);
     }
 
 }
